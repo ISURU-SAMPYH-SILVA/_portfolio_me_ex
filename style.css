@@ -1,0 +1,221 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+
+
+}
+
+:root {
+  --boder-color: #050917;
+  /* button boder color*/
+  --nav-text: #fff;
+  --nav-list: #811ad4;
+  --hover: #0de6b7c5;
+  --typing: #753cfa;
+
+}
+
+body {
+  background-color: #050917;
+  /* sait background color*/
+}
+
+.contenat {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 2%;
+
+}
+
+.contenar {
+  max-width: 90%;
+  margin: auto;
+
+}
+
+.sub-headin h1 {
+  font-size: 7vh;
+  color: var(--nav-text);
+  font-weight: 800;
+  font-style: unset .5vh;
+  margin-top: 10vh;
+
+}
+
+.navgation {
+  /* navgation man div*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.navgation .nav-logo {
+  /* animation and nav disply name*/
+  width: 6%;
+}
+
+.navgation .nav-logo img {
+  /* animation*/
+  width: 100%;
+}
+
+
+.navgation .name {
+  /* nav- disply name eke div*/
+  width: 30%;
+  font-weight: 700;
+  font-size: 3vh;
+  color: var(--nav-text);
+  cursor: grab;
+
+}
+
+.navgation .name h5 {
+  text-align: left;
+}
+
+.navgation .nav-list {
+  width: 70%;
+}
+
+.navgation ul {
+  list-style: none;
+  font-weight: 700;
+  display: flex;
+  padding: 2%;
+  gap: 10%;
+  justify-content: flex-end;
+  font-size: 2.8vh;
+  color: var(--nav-list, #fff);
+
+
+}
+
+.navgation a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.navgation ul :hover {
+  text-decoration: 0.5vh underline var(--hover);
+
+}
+
+.home-page {
+  background-image: url(/imge/herobg-CSqWnoE3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  margin-top: 0vh;
+
+
+
+
+}
+
+.home-page .left {
+  /*home page text*/
+  width: 60%;
+  margin-top: 10vh;
+}
+
+.home-page .rihit {
+  /*home page image*/
+  width: 40%;
+  margin-top: 5vh;
+
+}
+
+.home-page .rihit img {
+  width: 100%;
+}
+
+.home-page .typing-box {
+  font-weight: 700;
+  margin-top: 0.1%;
+  font-size: 7vh;
+  color: var(--typing);
+  width: 70%;
+  display: inline-flex;
+
+
+
+
+}
+
+.home-page h1 {
+  color: var(--nav-text);
+  font-size: 10vh;
+  width: 20%;
+
+
+}
+
+.home-page p {
+  color: var(--nav-text);
+  font-size: 5vh;
+  font-weight: 500;
+}
+
+.home-page .btn {
+  border: 2px solid var(--nav-text);
+  width: 25vh;
+  height: 3vw;
+  border-radius: 1.5vh;
+  color: var(--nav-text);
+  align-items: center;
+  display: inline-flex;
+  font-size: 3vh;
+  justify-content: center;
+  padding: 0%;
+  margin-left: 3vh;
+
+
+
+
+}
+
+.home-page .button {
+  margin-top: 7vh;
+  margin-left: 5vh;
+  margin-bottom: 15vh;
+}
+
+.home-page a {
+
+  text-decoration: none;
+  color: inherit;
+  padding: 0%;
+  margin: 0%;
+  display: contents;
+
+}
+
+.home-page .btn:hover {
+  background-color: #811ad4;
+  cursor: pointer;
+}
+
+#left:hover {
+  background-color: #1ad46e;
+  cursor: pointer;
+}
+
+.about-rihit {
+  width: 80%;
+  margin-top: 7vh;
+  color: var(--nav-text);
+  font-size: 3vh;
+}
+
+.about-left {
+  width: 20%;
+}
