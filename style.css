@@ -13,7 +13,7 @@
   --nav-list: #811ad4;
   --hover: #0de6b7c5;
   --typing: #753cfa;
-
+  --back-ground: rgb(21, 16, 48);
 }
 
 body {
@@ -42,6 +42,12 @@ body {
   font-style: unset .5vh;
   margin-top: 10vh;
 
+
+}
+
+.sub-headin hr {
+  max-width: 50vh;
+  max-height: 10vh;
 }
 
 .navgation {
@@ -124,7 +130,7 @@ body {
 .home-page .left {
   /*home page text*/
   width: 60%;
-  margin-top: 10vh;
+  margin-top: 0vh;
 }
 
 .home-page .rihit {
@@ -136,17 +142,37 @@ body {
 
 .home-page .rihit img {
   width: 100%;
+  position: relative;
+  animation-name: imgpo;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes imgpo {
+  0% {
+    transform: translatey(0);
+  }
+
+
+  50% {
+    transform: translatey(17vh);
+  }
+
+  to 100% {
+    transform: translatey(0vh);
+
+  }
+}
+
 
 .home-page .typing-box {
   font-weight: 700;
-  margin-top: 0.1%;
+  margin-top: -10vh;
   font-size: 7vh;
   color: var(--typing);
   width: 70%;
-  display: inline-flex;
-
-
+  display: inline;
+  font-weight: 900;
 
 
 }
@@ -155,6 +181,8 @@ body {
   color: var(--nav-text);
   font-size: 10vh;
   width: 20%;
+  margin-top: 10vh;
+
 
 
 }
@@ -163,6 +191,8 @@ body {
   color: var(--nav-text);
   font-size: 5vh;
   font-weight: 500;
+  margin-top: 3vh;
+
 }
 
 .home-page .btn {
@@ -184,7 +214,7 @@ body {
 }
 
 .home-page .button {
-  margin-top: 7vh;
+  margin-top: 5vh;
   margin-left: 5vh;
   margin-bottom: 15vh;
 }
@@ -200,7 +230,7 @@ body {
 }
 
 .home-page .btn:hover {
-  background-color: #811ad4;
+  background-image: linear-gradient(#b43cfa, #170347);
   cursor: pointer;
 }
 
@@ -218,4 +248,36 @@ body {
 
 .about-left {
   width: 20%;
+}
+
+/*END ABOUT US*/
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10vh;
+  justify-content: center;
+  padding: 2vh;
+  margin-top: 10vh;
+}
+
+.skills .cads h3 {
+  font-size: 2vh;
+  transform: translateY(12vh);
+  color: #fff;
+}
+
+.skills .cads #fri-wall {
+
+  transform: translateY(9vh);
+}
+
+.skills .cads {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 1vh;
+  border: 0.5vh solid white;
+  background-color: var(--back-ground);
+  text-align: center;
+  box-shadow: 10px 10px 50px #0d2cb8d3;
+
 }
