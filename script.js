@@ -36,3 +36,9 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 targets.forEach((target) => observer.observe(target));
+
+const menu = document.querySelector(".menu");
+const toggle = document.querySelector(".toggle");
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});

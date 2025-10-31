@@ -366,18 +366,128 @@ body a {
   opacity: 1;
 }
 
-.MY_PROJETS {
-  display: inline-flex;
-  gap: 10vh;
+.contenar .poget-text h3 {
+  width: 80%;
+  color: var(--nav-text);
+  font-size: 3vh;
+  margin-top: 10vh;
+
 }
 
-.projet-card {
-  width: 20vh;
-  height: 23vh;
-  border-radius: 1vh;
+.MY_PROJETS {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  margin-top: 10VH;
+  margin-right: 10vh;
+  justify-content: center;
+}
+
+.proget-card {
+  z-index: -1;
+  width: 50vh;
+  height: 60vh;
+  margin-top: 5%;
+  border-radius: 5vh;
+  color: var(--nav-text);
   border: 0.5vh solid white;
   background-color: var(--back-ground);
   text-align: center;
-  box-shadow: 10px 10px 50px #43b80dd3;
+  box-shadow: 5px 5px 20px #0db8a18c;
 
+}
+
+.MY_PROJETS .proget-card a {
+  cursor: move;
+}
+
+.MY_PROJETS .proget-card h3 {
+  margin-top: 1vh;
+  font-size: 2.5vh;
+  line-height: 2vh;
+}
+
+/*co-manu*/
+
+.menu {
+  position: fixed;
+  transform: translate(22vh, 37vh);
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+}
+
+.menu .toggle {
+  position: relative;
+  z-index: 1;
+  height: 5vh;
+  width: 5vh;
+  background: var(--nav-text);
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 1.25s;
+  z-index: 5;
+
+}
+
+.menu.active .toggle {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15),
+    0 0 0 2px #333,
+    0 0 0 8px #fff;
+}
+
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transition: 0.5s;
+  transform: rotate(calc(360deg/8 * var(--i)));
+  transform-origin: 140px;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+}
+
+.menu.active li {
+  scale: 1.5;
+  transition: 0.75s;
+
+}
+
+.menu li a {
+  position: relative;
+  display: flex;
+  transform: rotate(calc(360deg/-8 * var(--i)));
+  width: 4vh;
+  height: 4vh;
+  background-color: var(--back-ground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  color: var(--clr);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.menu li:hover a {
+  font-size: 2.5rem;
+  box-shadow: 0 0 0 2px var(--clr),
+    0 0 0 6px #fff;
+  gap: 3vh;
+}
+
+.PROJETS {
+  margin-top: 50%;
 }
