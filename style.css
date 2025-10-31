@@ -262,22 +262,93 @@ body {
 
 .skills .cads h3 {
   font-size: 2vh;
-  transform: translateY(12vh);
+  transform: translateY(3vh);
   color: #fff;
 }
 
-.skills .cads #fri-wall {
+.skills .cads h2 {
+  transform: translateY(2vh);
+  font-size: 2vh;
+  color: #fff;
+}
 
-  transform: translateY(9vh);
+.skills .cads h4 {
+  transform: translateY(1vh);
+  font-size: 2vh;
+  color: #fff;
+}
+
+.skills .cads #mo1 {
+
+  transform: translate(2VH, 1VH);
 }
 
 .skills .cads {
-  width: 15vh;
-  height: 15vh;
+  width: 20vh;
+  height: 23vh;
   border-radius: 1vh;
   border: 0.5vh solid white;
   background-color: var(--back-ground);
   text-align: center;
   box-shadow: 10px 10px 50px #0d2cb8d3;
 
+}
+
+
+.skills .cads #move {
+  transform: translate(-6vh, 1vh)
+}
+
+.skills .cads #SSC {
+  transform: translate(-6vh, 1vh)
+}
+
+.skills .cads #CISCO,
+#UNFI {
+  transform: translate(-4.5vh, 0.4vh)
+}
+
+.skills .cads #HUWEI {
+  transform: translate(-0.1vh, 1.4vh)
+}
+
+.skills .cads #PYTHON,
+#PHP,
+#SQL {
+  transform: translate(0vh, 1vh)
+}
+
+.skills .cads #JS {
+  transform: translate(0vh, 1vh)
+}
+
+.skills .cads #react {
+  transform: translate(-.2vh, 1vh)
+}
+
+.skills .cads #WORDPRESS {
+  transform: translate(-5vh, 1vh)
+}
+
+.skills .cads #XD {
+  transform: translate(-0vh, 1vh)
+}
+
+.skills .cads ::before {
+
+  position: relative;
+  animation-name: MOV_DIV;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes MOV_DIV {
+  from {
+    transform: translateX(-150vh);
+
+  }
+
+  to {
+    transform: translateX(0vh);
+  }
 }
