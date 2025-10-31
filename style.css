@@ -18,7 +18,14 @@
 
 body {
   background-color: #050917;
+
   /* sait background color*/
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+
 }
 
 .contenat {
@@ -59,6 +66,7 @@ body {
   text-align: center;
   margin-left: 2%;
   margin-right: 2%;
+  position: sticky;
 
 }
 
@@ -267,7 +275,7 @@ body {
 }
 
 .skills .cads h2 {
-  transform: translateY(2vh);
+  transform: translateY(1vh);
   font-size: 2vh;
   color: #fff;
 }
@@ -280,7 +288,7 @@ body {
 
 .skills .cads #mo1 {
 
-  transform: translate(2VH, 1VH);
+  transform: translate(-5vh, 1vh);
 }
 
 .skills .cads {
@@ -299,9 +307,6 @@ body {
   transform: translate(-6vh, 1vh)
 }
 
-.skills .cads #SSC {
-  transform: translate(-6vh, 1vh)
-}
 
 .skills .cads #CISCO,
 #UNFI {
@@ -334,21 +339,45 @@ body {
   transform: translate(-0vh, 1vh)
 }
 
-.skills .cads ::before {
-
+.skills .cads {
   position: relative;
   animation-name: MOV_DIV;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  /* Hide until triggered */
 }
 
 @keyframes MOV_DIV {
   from {
     transform: translateX(-150vh);
-
+    opacity: 0;
   }
 
   to {
     transform: translateX(0vh);
+    opacity: 1;
   }
+}
+
+.skills .cads.animate::before {
+  animation-name: MOV_DIV;
+  opacity: 1;
+}
+
+.MY_PROJETS {
+  display: inline-flex;
+  gap: 10vh;
+}
+
+.projet-card {
+  width: 20vh;
+  height: 23vh;
+  border-radius: 1vh;
+  border: 0.5vh solid white;
+  background-color: var(--back-ground);
+  text-align: center;
+  box-shadow: 10px 10px 50px #43b80dd3;
+
 }

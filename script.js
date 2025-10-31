@@ -24,5 +24,15 @@ function typeLine() {
     }, 1000); // delay before next line
   }
 }
+const targets = document.querySelectorAll(".skills .cads");
 
-typeLine();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+      observer.unobserve(entry.target); // Trigger once per card
+    }
+  });
+});
+
+targets.forEach((target) => observer.observe(target));
