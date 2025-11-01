@@ -259,6 +259,83 @@ body a {
   width: 20%;
 }
 
+/*toggl MANU*/
+
+.menu {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu .toggle {
+  position: relative;
+  height: 60px;
+  z-index: 5;
+  width: 60px;
+  background: var(--back-ground);
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 1.25s;
+  z-index: 1;
+
+}
+
+.menu.active .toggle {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15),
+    0 0 0 2px #333,
+    0 0 0 8px #fff;
+}
+
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transition: 0.5s;
+  transform: rotate(calc(360deg/8 * var(--i)));
+  transform-origin: 140px;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+}
+
+.menu.active li {
+  scale: 1;
+}
+
+.menu li a {
+  position: relative;
+  display: flex;
+  transform: rotate(calc(360deg/-8 * var(--i)));
+  width: 60px;
+  height: 60px;
+  background-color: var(--back-ground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  color: var(--clr);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.menu li:hover a {
+  font-size: 2.5rem;
+  box-shadow: 0 0 0 2px var(--nav-list),
+    0 0 0 6px #fff;
+}
+
 /*END ABOUT US*/
 .skills {
   display: flex;
@@ -387,18 +464,11 @@ body a {
   justify-content: center;
 }
 
-.proget-card {
-  z-index: -1;
-  width: 50vh;
-  height: 60vh;
-  margin-top: 5%;
-  border-radius: 5vh;
-}
 
 .MY_PROJETS {
   display: flex;
   flex-wrap: wrap;
-  gap: 10%;
+  gap: 5vh;
   margin-top: 25VH;
   margin-right: 10vh;
   justify-content: center;
@@ -406,16 +476,15 @@ body a {
 
 .proget-card {
   z-index: -4;
-  width: 25vh;
-  margin-top: 5%;
-  max-width: 25vh;
-  height: 30vh;
+  width: 45vh;
+  height: 65vh;
   border-radius: 1vh;
   color: var(--nav-text);
   border: 0.5vh solid white;
   background-color: var(--back-ground);
   text-align: center;
   box-shadow: 5px 5px 20px #0db8a18c;
+  margin-top: 3vh;
 
 }
 
@@ -429,79 +498,6 @@ body a {
   line-height: 2vh;
 }
 
-/*toggl MANU*/
-
-.menu {
-  position: fixed;
-  right: 32px;
-  bottom: 32px;
-  width: 280px;
-  height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu .toggle {
-  position: relative;
-  height: 60px;
-  z-index: 5;
-  width: 60px;
-  background: var(--back-ground);
-  border-radius: 50%;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: 1.25s;
-  z-index: 1;
-
-}
-
-.menu.active .toggle {
-  transform: rotate(360deg);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15),
-    0 0 0 2px #333,
-    0 0 0 8px #fff;
-}
-
-.menu li {
-  position: absolute;
-  left: 0;
-  list-style: none;
-  transition: 0.5s;
-  transform: rotate(calc(360deg/8 * var(--i)));
-  transform-origin: 140px;
-  scale: 0;
-  transition-delay: calc(0.05s * var(--i));
-}
-
-.menu.active li {
-  scale: 1;
-}
-
-.menu li a {
-  position: relative;
-  display: flex;
-  transform: rotate(calc(360deg/-8 * var(--i)));
-  width: 60px;
-  height: 60px;
-  background-color: var(--back-ground);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 1.75rem;
-  color: var(--clr);
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-  transition: 0.5s;
-}
-
-.menu li:hover a {
-  font-size: 2.5rem;
-  box-shadow: 0 0 0 2px var(--nav-list),
-    0 0 0 6px #fff;
+.PROJETS {
+  margin-top: 500px;
 }
