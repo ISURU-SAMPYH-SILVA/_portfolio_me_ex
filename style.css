@@ -366,6 +366,7 @@ body a {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 .contenar .poget-text h3 {
   width: 80%;
   color: var(--nav-text);
@@ -389,6 +390,24 @@ body a {
   height: 60vh;
   margin-top: 5%;
   border-radius: 5vh;
+=======
+.MY_PROJETS {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  margin-top: 25VH;
+  margin-right: 10vh;
+  justify-content: center;
+}
+
+.proget-card {
+  z-index: -1;
+  width: 25vh;
+  margin-top: 5%;
+  max-width: 25vh;
+  height: 30vh;
+  border-radius: 1vh;
+>>>>>>> 3154524b38e58677affe77de8745b184c94fec24
   color: var(--nav-text);
   border: 0.5vh solid white;
   background-color: var(--back-ground);
@@ -411,7 +430,11 @@ body a {
 
 .menu {
   position: fixed;
+<<<<<<< HEAD
   transform: translate(22vh, 37vh);
+=======
+  transform: translate(25vh, 40vh);
+>>>>>>> 3154524b38e58677affe77de8745b184c94fec24
   width: 280px;
   height: 280px;
   display: flex;
@@ -426,7 +449,11 @@ body a {
   z-index: 1;
   height: 5vh;
   width: 5vh;
+<<<<<<< HEAD
   background: var(--nav-text);
+=======
+  background: #fff;
+>>>>>>> 3154524b38e58677affe77de8745b184c94fec24
   border-radius: 50%;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -459,8 +486,12 @@ body a {
 }
 
 .menu.active li {
+<<<<<<< HEAD
   scale: 1.5;
   transition: 0.75s;
+=======
+  scale: 1;
+>>>>>>> 3154524b38e58677affe77de8745b184c94fec24
 
 }
 
@@ -470,7 +501,11 @@ body a {
   transform: rotate(calc(360deg/-8 * var(--i)));
   width: 4vh;
   height: 4vh;
+<<<<<<< HEAD
   background-color: var(--back-ground);
+=======
+  background-color: #FFF;
+>>>>>>> 3154524b38e58677affe77de8745b184c94fec24
   display: flex;
   align-items: center;
   justify-content: center;
@@ -485,9 +520,13 @@ body a {
   font-size: 2.5rem;
   box-shadow: 0 0 0 2px var(--clr),
     0 0 0 6px #fff;
+<<<<<<< HEAD
   gap: 3vh;
 }
 
 .PROJETS {
   margin-top: 50%;
+=======
+  gap: 2vh;
+>>>>>>> 3154524b38e58677affe77de8745b184c94fec24
 }
