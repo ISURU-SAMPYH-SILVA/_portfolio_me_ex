@@ -1,0 +1,20 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --boder-color: #050917;
+  /* button boder color*/
+  --nav-text: #fff;
+  --nav-list: #811ad4;
+  --hover: #0de6b7c5;
+  --typing: #753cfa;
+  --back-ground: rgb(21, 16, 48);
+  --clr: #fff
+}
+
+body {
+  background-color: var(--boder-color);
+}
