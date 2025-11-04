@@ -150,11 +150,6 @@ a {
   max-width: 100%;
   margin-top: 0vh;
   display: grid;
-  grid-template-columns: 60%, 40%;
-
-
-
-
 }
 
 .home-page .left {
@@ -162,18 +157,22 @@ a {
   width: 60%;
 
 
+
+
 }
 
 .home-page .rihit {
   /*home page image*/
   width: 40%;
-  right: 10%;
+  height: 75vh;
+  border-left: .2vw solid var(--nav-text);
 
 }
 
 .home-page .rihit img {
   width: 100%;
   right: 0%;
+  padding-left: 2%;
   position: relative;
   animation-name: imgpo;
   animation-duration: 8s;
@@ -272,27 +271,43 @@ a {
 }
 
 .about-rihit {
-  width: 80%;
+  width: 100%;
   margin-top: 7vh;
   color: var(--nav-text);
   font-size: 3vh;
 }
 
-.about-left {
-  width: 20%;
+.about-rihit .button {
+  background-image: linear-gradient(rgb(2, 204, 169), #c061ff);
+  width: 26vh;
+  height: 5vh;
+  align-items: center;
+  border-radius: 1vh;
+
 }
+
+.about-rihit .btn {
+  color: var(--nav-text);
+  align-items: center;
+  justify-content: center;
+  border-radius: 1vh;
+
+}
+
+
 
 /*toggl MANU*/
 
 .menu {
   position: fixed;
-  right: 32px;
-  bottom: 32px;
+  right: 0vh;
+  bottom: 0vh;
   width: 280px;
   height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
+  scale: 1;
 }
 
 .menu .toggle {
@@ -372,12 +387,12 @@ a {
 
 .skills .cads h3 {
   font-size: 2vh;
-  transform: translateY(3vh);
+  transform: translate(1vh, 2vh);
   color: #fff;
 }
 
 .skills .cads h2 {
-  transform: translateY(1vh);
+  transform: translateY(2vh);
   font-size: 2vh;
   color: #fff;
 }
@@ -401,51 +416,79 @@ a {
   background-color: var(--back-ground);
   text-align: center;
   z-index: -2;
+  line-height: 1.7vh;
   box-shadow: 10px 10px 50px #0d2cb8d3;
 
 }
 
+.skills .cads #text {}
+
+
 
 .skills .cads #move {
-  transform: translate(-6vh, 1vh)
+  width: 25vh;
+  transform: translateX(-7vh);
+  margin-top: 1vh;
+}
+
+.skills .cads .cascade {
+  max-width: 27vh;
+  transform: translate(-8vh, 1vh);
+
 }
 
 
-.skills .cads #CISCO,
+.skills .cads #CI {
+  width: 25vh;
+  transform: translate(-6.5vh, 0.4vh)
+}
+
+
 #UNFI {
-  transform: translate(-4.5vh, 0.4vh)
+  width: 25vh;
+  transform: translate(-6.5vh, 0.4vh)
+}
+
+#UNIFIt {
+  transform: translate(1vh, -0.5vh);
 }
 
 .skills .cads #HUWEI {
-  transform: translate(-0.1vh, 1.4vh)
+  width: 17vh;
+  transform: translate(-0vh, 1.4vh)
 }
 
 .skills .cads #PYTHON,
 #PHP,
 #SQL {
+  width: 17vh;
   transform: translate(0vh, 1vh)
 }
 
 .skills .cads #JS {
+  width: 17vh;
   transform: translate(0vh, 1vh)
 }
 
 .skills .cads #react {
+  width: 17vh;
   transform: translate(-.2vh, 1vh)
 }
 
 .skills .cads #WORDPRESS {
-  transform: translate(-5vh, 1vh)
+  width: 24vh;
+  transform: translate(-6vh, 1vh)
 }
 
 .skills .cads #XD {
+  width: 17vh;
   transform: translate(-0vh, 1vh)
 }
 
 .skills .cads {
   position: relative;
   animation-name: MOV_DIV;
-  animation-duration: 5s;
+  animation-duration: 0s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -474,7 +517,8 @@ a {
   width: 80%;
   color: var(--nav-text);
   font-size: 3vh;
-  margin-top: 10vh;
+  margin-bottom: 10vh;
+
 
 }
 
@@ -492,15 +536,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 5vh;
-  margin-top: 25VH;
   margin-right: 10vh;
   justify-content: center;
 }
 
 .proget-card {
   z-index: -4;
-  width: 55vh;
-  height: 85vh;
+  width: 65vh;
+  height: 95vh;
   border-radius: 2.5vh;
   color: var(--nav-text);
   border: 0.5vh solid white;
@@ -510,6 +553,11 @@ a {
   margin-top: 3vh;
   padding-top: 2vh;
 
+}
+
+.proget-card image {
+  text-align: center;
+  justify-content: center;
 }
 
 .PROJETS a {
@@ -524,26 +572,33 @@ a {
 }
 
 .PROJETS {
-  margin-top: 500px;
+  margin-top: 9vh;
 }
+
+.proget-card #web {
+  transform: translateY(3vh);
+}
+
 
 .proget-card .imge-div {
   background-color: var(--nav-text);
-  width: 40vh;
-  height: 35vh;
+  width: 50vh;
+  height: 40vh;
   border-radius: 2.5vh;
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 1%;
 
 
 }
 
-.proget-card img {
-  scale: 3;
-  align-items: center;
-  transform: translateY(4vh);
+.poget-text {
+  margin-top: 10vh;
+
 }
+
+
 
 .proget-card p {
   padding: 2vh;
@@ -555,26 +610,24 @@ a {
   display: inline;
 }
 
-.PROJETS .btn {
-  margin-top: 5vh;
-  margin-left: 5vh;
-  display: flex;
+.poget-text .btn {
   border: 1px solid var(--nav-text);
-  width: 30vh;
-  height: 5vh;
-  font-size: 3vh;
-  font-weight: 500;
-  border-radius: 1vh;
-  text-align: center;
-  align-items: center;
   color: var(--nav-text);
+  padding: .5%;
+  width: 23vh;
+  height: 5em;
+  text-align: center;
+  border-radius: 1vh;
+  font-size: 2vh;
+  font-weight: 700;
+  margin-top: 5%;
+  height: 3vh;
+  align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#06f183, #07dce4);
+  margin-left: 40%;
 }
 
-.PROJETS .btn :hover {
-  background-image: linear-gradient(#971be9, #e20cd7);
-}
+
 
 .left_Contact {
   width: 40%;
@@ -584,7 +637,7 @@ a {
 .right_Contact {
   width: 60%;
   height: auto;
-  margin-top: 20vh;
+
 
 
 }
@@ -596,6 +649,8 @@ a {
   align-items: center;
   justify-content: center;
   text-align: left;
+  display: block;
+  margin-top: 10%;
 }
 
 .right_Contact .Contact-div h3 {
@@ -640,6 +695,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: 40%;
+  padding: 1%;
 }
 
 .right_Contact small {
