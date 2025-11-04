@@ -71,8 +71,12 @@ a {
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  padding: 0%;
 
+
+}
+
+.btn:hover {
+  background-color: #0ae793;
 }
 
 
@@ -165,7 +169,6 @@ a {
   /*home page image*/
   width: 40%;
   height: 75vh;
-  border-left: .2vw solid var(--nav-text);
 
 }
 
@@ -196,7 +199,7 @@ a {
 }
 
 
-.home-page .typing-box {
+.home-page #typingBox {
   font-weight: 700;
   margin-top: -10vh;
   font-size: 7vh;
@@ -248,6 +251,7 @@ a {
   margin-top: 5vh;
   margin-left: 5vh;
   margin-bottom: 15vh;
+  gap: 1vh;
 }
 
 .home-page a {
@@ -265,10 +269,6 @@ a {
   cursor: pointer;
 }
 
-#left:hover {
-  background-color: #1ad46e;
-  cursor: pointer;
-}
 
 .about-rihit {
   width: 100%;
@@ -278,11 +278,11 @@ a {
 }
 
 .about-rihit .button {
-  background-image: linear-gradient(rgb(2, 204, 169), #c061ff);
   width: 26vh;
   height: 5vh;
   align-items: center;
   border-radius: 1vh;
+  border: 1px solid var(--nav-text);
 
 }
 
@@ -293,7 +293,6 @@ a {
   border-radius: 1vh;
 
 }
-
 
 
 /*toggl MANU*/

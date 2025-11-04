@@ -1,6 +1,10 @@
-const lines = ["ISURU SAMPATH", "NETWORK ENGINEER", "WEB DEVELOPER"];
-
 const typingBox = document.getElementById("typingBox");
+const lines = [
+  "A.M.ISURU SAMPATH",
+  "NETWORK ENGINEER",
+  "WEB DISIGNER",
+  "UI/US DISIGNER",
+]; // ✅ Add your lines here
 let lineIndex = 0;
 let charIndex = 0;
 
@@ -24,6 +28,8 @@ function typeLine() {
     }, 1000); // delay before next line
   }
 }
+
+typeLine(); // ✅ Start the typing eff
 const targets = document.querySelectorAll(".skills .cads");
 
 const observer = new IntersectionObserver((entries) => {
