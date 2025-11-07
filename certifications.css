@@ -4,29 +4,58 @@
 }
 
 :root {
-  --background_color: #0E0517;
+  --background_color: #0d0826;
+  --font_vcolor: #fff;
+  --border_color: #06294f;
 }
 
 body {
   background-color: var(--background_color);
 }
 
-.contaner {
+.contanar {
   width: 90%;
   margin: auto;
   align-items: center;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .left_side {
-  width: 60%;
+  max-width: 60%;
 }
 
-.rit_side {
+.rihit_side {
   width: 40%;
 }
 
-.PacketTracer img {
-  width: 100%;
+.sub_heading h3 {
+  font-size: 2.5vw;
+  color: var(--font_vcolor);
+  text-transform: uppercase;
+}
 
+.sub_heading hr {
+  width: 70%;
+}
+
+.certification {
+  margin: 3%;
+}
+
+.left_side .certification_imge {}
+
+.left_side .certification_imge img {
+  width: 95%;
+  z-index: -5;
+  border: .5vw solid var(--font_vcolor);
+
+
+}
+
+.left_side .certification_imge #badge {
+  z-index: 1;
+  max-width: 25%;
+  transform: translate(35vw, -12vw);
+  transform: translate3d(100drg)
 }
