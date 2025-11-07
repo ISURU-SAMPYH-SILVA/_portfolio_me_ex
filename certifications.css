@@ -4,9 +4,9 @@
 }
 
 :root {
-  --background_color: #0d0826;
+  --background_color: #010616;
   --font_vcolor: #fff;
-  --border_color: #06294f;
+  --border_color: #0f19e0;
 }
 
 body {
@@ -23,10 +23,12 @@ body {
 
 .left_side {
   max-width: 60%;
+  display: inline-block;
 }
 
 .rihit_side {
   width: 40%;
+  display: inline-block;
 }
 
 .sub_heading h3 {
@@ -48,9 +50,14 @@ body {
 .left_side .certification_imge img {
   width: 95%;
   z-index: -5;
-  border: .5vw solid var(--font_vcolor);
+  border: .5vw solid var(--border_color);
+  border-radius: 1%;
 
 
+}
+
+.left_side .certification_imge #badge {
+  border-radius: 1.2vw;
 }
 
 .left_side .certification_imge #badge {
@@ -58,4 +65,8 @@ body {
   max-width: 25%;
   transform: translate(35vw, -12vw);
   transform: translate3d(100drg)
+}
+
+.rihit_side h2 {
+  color: var(--font_vcolor);
 }
