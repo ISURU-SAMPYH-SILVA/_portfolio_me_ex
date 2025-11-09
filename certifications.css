@@ -1,6 +1,6 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -11,62 +11,175 @@
 
 body {
   background-color: var(--background_color);
+  font-family: "Poppins", sans-serif;
+
 }
 
-.contanar {
-  width: 90%;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10%;
+
+.site {
+  display: grid;
+  grid-template-rows: 10% auto 10%;
+  height: 100vh;
 }
 
-.left_side {
-  max-width: 60%;
-  display: inline-block;
-}
-
-.rihit_side {
-  width: 40%;
-  display: inline-block;
-}
-
-.sub_heading h3 {
-  font-size: 2.5vw;
+.headin h2 {
   color: var(--font_vcolor);
-  text-transform: uppercase;
+  position: relative;
+  line-height: -1vh;
+  margin-top: 10%;
+
 }
 
-.sub_heading hr {
-  width: 70%;
+.headin h2::after {
+  content: '';
+  background-color: #de0b0b;
+  width: 75%;
+  height: .5vw;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .certification {
-  margin: 3%;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+
 }
 
-.left_side .certification_imge {}
+.certification .sid_left {
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
 
-.left_side .certification_imge img {
-  width: 95%;
+}
+
+
+.certification .sid_left img {
+  max-width: 85%;
   z-index: -5;
-  border: .5vw solid var(--border_color);
-  border-radius: 1%;
+  margin: 0%;
+}
 
+.certification .sid_rihit {
+  width: 40vw;
+  max-height: 1fr;
+  gap: 0%;
 
 }
 
-.left_side .certification_imge #badge {
-  border-radius: 1.2vw;
+.certification .sid_rihit .list {
+  gap: -100%;
 }
 
-.left_side .certification_imge #badge {
-  z-index: 1;
-  max-width: 25%;
-  transform: translate(35vw, -12vw);
-  transform: translate3d(100drg)
-}
-
-.rihit_side h2 {
+.certification .sid_rihit ul {
+  list-style: none;
   color: var(--font_vcolor);
+}
+
+.certification .sid_rihit h4 {
+  color: var(--font_vcolor);
+  line-height: 3;
+
+}
+
+.certification .sid_rihit .list {
+  padding-left: 15%;
+}
+
+.certification .sid_rihit .badge_onliy {
+  width: 100%;
+  background-color: #fff;
+  height: 10%;
+}
+
+
+@media screen and (min-width: 900px) {
+  .certification {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .certification .sid_left {
+    width: 60%;
+    box-sizing: border-box;
+  }
+
+  .certification .sid_rihit {
+    width: 40%;
+    text-align: left;
+  }
+
+  .certification .nvq h4 {
+    font-size: 1.5vh;
+    line-height: 1.5;
+
+
+  }
+
+  .certification .sid_rihit h4 {
+    font-size: 1.5vw;
+  }
+
+
+  .headin h2 {
+    font-size: 6vh;
+  }
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+  /*adu ewa*/
+  .headin h2 {
+    font-size: 3vh;
+  }
+
+  .certification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+  }
+
+  .certification .sid_left,
+  .certification .sid_rihit {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .certification .sid_left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .certification .sid_rihit h4 {
+    width: 100%;
+    font-size: 2vh;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2;
+
+  }
+
+  .skills ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+
+
+}
+
+.certification .sid_left .badge {
+  width: 20%;
+  transform: translate(200%, -85%);
 }
