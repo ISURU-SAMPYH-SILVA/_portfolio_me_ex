@@ -485,16 +485,14 @@ a {
 }
 
 .skills .cads {
-  position: relative;
-  animation-name: MOV_DIV;
-  animation-duration: 0s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  opacity: 0;
-  /* Hide until triggered */
+
+  animation: APPER linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  animation-duration: 10s;
 }
 
-@keyframes MOV_DIV {
+@keyframes APPER {
   from {
     transform: translateX(-150vh);
     opacity: 0;
@@ -504,6 +502,12 @@ a {
     transform: translateX(0vh);
     opacity: 1;
   }
+}
+
+@keyframes MOV_DIV {
+  from {}
+
+  to {}
 }
 
 .skills .cads.animate::before {
@@ -528,6 +532,11 @@ a {
   margin-top: 10VH;
   margin-right: 10vh;
   justify-content: center;
+  animation: APPER linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  animation-duration: 10s;
+
 }
 
 
